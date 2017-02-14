@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div ng-app="mathApp" ng-controller="mathCtrl">
+        <table>
+        <tr>
+            <th>enter a</th><th>enter b</th>
+        </tr>
+        <tr ng-repeat="number in numbers">
+            <td><input type="text" ng-model="number"></td>
+            <td><input type="text" ng-model="number"></td>
+            <!--<td><input type="button" ng-click="Number($index)" value= "Delete"></td>-->
+        </tr>
+        </table>
+        <input type="button" ng-click="add()" value="Add">
+        <p>The algebraic expression is:{{Math.square((a+b)^2)}}</p>
+    </div>
+
+<script>
+	
+</script>
+</body>
+</html>
