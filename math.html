@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title></title>
+	<script src="htp://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.9.1/math.js"></script>
+<script src="controllers/controller.js">
+</script>
+
 </head>
 <body>
 <div ng-app="mathApp" ng-controller="mathCtrl">
@@ -15,12 +20,11 @@
             <!--<td><input type="button" ng-click="Number($index)" value= "Delete"></td>-->
         </tr>
         </table>
-        <input type="button" ng-click="add()" value="Add">
-        <p>The algebraic expression is:{{Math.square((a+b)^2)}}</p>
+        <input type="button" ng-click="AddNumbers()" value="AddNumbers">
+        <p>
+        The algebraic expression is:{{result)}}</p>
     </div>
 
-<script>
-	
-</script>
+
 </body>
 </html>
